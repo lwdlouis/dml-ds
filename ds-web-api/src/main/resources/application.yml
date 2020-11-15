@@ -1,0 +1,13 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: web-api
+  data:
+    mongodb:
+      database: webflux
+      uri: mongodb://localhost:27017
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka/
