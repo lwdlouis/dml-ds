@@ -1,12 +1,10 @@
 server:
-  port: 8082
+  port: 8081
+
 spring:
   application:
-    name: web-api
-  data:
-    mongodb:
-      database: webflux
-      uri: mongodb://localhost:27017
+    name: routing-zuul
+
 eureka:
   client:
     service-url:

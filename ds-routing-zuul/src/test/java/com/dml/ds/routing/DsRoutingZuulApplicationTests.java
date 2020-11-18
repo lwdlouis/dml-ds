@@ -1,10 +1,10 @@
-package com.dml.ds.proxy.zuul;
+package com.dml.ds.routing;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DsProxyZuulApplicationTests {
+class DsRoutingZuulApplicationTests {
 
 	@Test
 	void contextLoads() {
