@@ -9,31 +9,23 @@
 	</parent>
 
 	<groupId>com.dml.ds</groupId>
-	<artifactId>ds-proxy-zuul</artifactId>
+	<artifactId>ds-routing-zuul</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>ds-proxy-zuul</name>
+	<name>ds-routing-zuul</name>
 
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-zuul</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-netflix-eureka-client</artifactId>
+			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
-			<exclusions>
-				<exclusion>
-					<groupId>org.junit.vintage</groupId>
-					<artifactId>junit-vintage-engine</artifactId>
-				</exclusion>
-			</exclusions>
 		</dependency>
 	</dependencies>
 
