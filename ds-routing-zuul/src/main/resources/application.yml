@@ -9,3 +9,18 @@ eureka:
   client:
     service-url:
       defaultZone: http://127.0.0.1:8761/eureka/
+
+logging:
+  level:
+    com.neflix: DEBUG
+
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+          enable:true
+        isolation:
+          thread:
+            timeoutInMilliseconds:2
+
