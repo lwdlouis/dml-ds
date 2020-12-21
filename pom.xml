@@ -21,6 +21,7 @@
         <module>ds-discovery</module>
         <module>ds-web-api</module>
         <module>ds-data-backup</module>
+        <module>ds-routing-gateway</module>
     </modules>
 
     <properties>
