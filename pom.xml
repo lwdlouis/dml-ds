@@ -22,6 +22,7 @@
         <module>ds-web-api</module>
         <module>ds-data-backup</module>
         <module>ds-routing-gateway</module>
+        <module>ds-domain</module>
     </modules>
 
     <properties>
@@ -29,6 +30,7 @@
         <java.version>1.8</java.version>
         <mongodb.plus.version>1.0.0.RELEASE</mongodb.plus.version>
         <spring-cloud.version>Hoxton.SR9</spring-cloud.version>
+        <ds-module.version>${project.version}</ds-module.version>
     </properties>
 
     <dependencies>
@@ -51,6 +53,11 @@
                 <version>${spring-cloud.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.dml.ds</groupId>
+                <artifactId>ds-domain</artifactId>
+                <version>${ds-module.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
