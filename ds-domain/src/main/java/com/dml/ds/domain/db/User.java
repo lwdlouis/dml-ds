@@ -1,4 +1,4 @@
-package com.dml.ds.webapi.domain;
+package com.dml.ds.domain.db;
 
 import lombok.Data;
 import org.springframework.data.annotation.Id;

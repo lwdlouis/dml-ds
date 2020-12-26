@@ -1,6 +1,6 @@
 package com.dml.ds.webapi.controller;
 
-import com.dml.ds.webapi.domain.User;
+import com.dml.ds.domain.db.User;
 import com.dml.ds.webapi.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
