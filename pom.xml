@@ -17,11 +17,11 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>ds-routing-zuul</module>
-        <module>ds-discovery</module>
+        <module>ds-gateway-zuul</module>
+        <module>ds-discovery-eureka</module>
         <module>ds-web-api</module>
         <module>ds-data-backup</module>
-        <module>ds-routing-gateway</module>
+        <module>ds-gateway-springcloud</module>
         <module>ds-domain</module>
         <module>ds-auth-service</module>
     </modules>

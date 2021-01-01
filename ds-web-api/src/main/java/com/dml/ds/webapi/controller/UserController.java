@@ -20,4 +20,9 @@ public class UserController {
     public Mono<User> getUser(@PathVariable String staffId) {
         return userRepository.findByStaffId(staffId);
     }
+
+    @GetMapping("/test")
+    public Mono<String> test() {
+        return Mono.just("test success");
+    }
 }

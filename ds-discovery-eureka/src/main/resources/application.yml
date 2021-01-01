@@ -1,0 +1,19 @@
+server:
+  port: 8761
+spring:
+  application:
+    name: ds-discovery-eurek
+eureka:
+  server:
+    enable-self-preservation: true
+    renewal-percent-threshold: 0.85
+  instance:
+    hostname: 127.0.0.1
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+  dashboard:
+    enabled: true
+    path: dashboard
