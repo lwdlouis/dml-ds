@@ -14,9 +14,11 @@ public class LogRequestFilter implements GatewayFilter {
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
         log.info("Request-[{}] {}", exchange.getLogPrefix(), exchange.getRequest().getURI().toString());
+        long start = System.currentTimeMillis();
 
         return chain.filter(exchange).doFinally(s -> {
-            log.info("Response .......");
+            long time = System.currentTimeMillis() - start;
+            log.info("Response .......{}ms", time);
         });
     }
 }

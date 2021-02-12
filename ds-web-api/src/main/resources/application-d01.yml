@@ -1,5 +1,5 @@
 server:
-  port: 18082
+  port: 18081
 spring:
   application:
     name: web-api
@@ -10,5 +10,5 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://127.0.0.1:8761/eureka/
+      zoneD01: http://127.0.0.1:8761/eureka/
     region: d01

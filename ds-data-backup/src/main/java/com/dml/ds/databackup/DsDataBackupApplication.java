@@ -18,8 +18,8 @@ public class DsDataBackupApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		if (1 == 1) {
-			throw new RuntimeException("hahahah");
-		}
+//		if (1 == 1) {
+//			throw new RuntimeException("hahahah");
+//		}
 	}
 }
